@@ -231,6 +231,37 @@ h1{
 .forgot-password-close:hover {
     background-color: #c9302c;
 }
+.late-return-policy-container {
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.late-return-policy-heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.late-return-policy-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.late-return-policy-item {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.late-return-policy-item strong {
+    color: #333;
+}
 
 
 

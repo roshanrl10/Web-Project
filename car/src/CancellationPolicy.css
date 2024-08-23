@@ -1,3 +1,4 @@
+/* CancellationPolicy.css */
 .cancellation-policy {
     background-color: #f9f9f9;
     border: 1px solid #ddd;
@@ -13,13 +14,13 @@
 
 .policy-title {
     font-size: 24px;
-    color: black;
+    color: #333; /* Updated color for better visibility */
     margin-bottom: 10px;
 }
 
 .policy-intro {
-    font-size: 20px;
-    color: black;
+    font-size: 18px; /* Slightly smaller font size for intro */
+    color: #333; /* Updated color for better visibility */
     margin-bottom: 20px;
 }
 
@@ -53,7 +54,7 @@
 
 .policy-footer {
     margin-top: 20px;
-    font-size: 20px;
-    color:darkred;
+    font-size: 18px; /* Slightly smaller font size for footer */
+    color: #c0392b; /* Changed color to dark red for emphasis */
     text-align: center;
 }

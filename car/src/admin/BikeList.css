@@ -1,0 +1,64 @@
+.bike-list-container {
+    margin-left: 250px; /* Adjust according to your sidebar width */
+    padding: 20px;
+}
+
+.add-bike-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #2196F3; /* Blue background to match the bike list design */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.add-bike-button:hover {
+    background-color: #1976D2; /* Darker blue on hover */
+}
+
+.bike-list-table {
+    width: 100%; /* Set a fixed width similar to bike list */
+    border-collapse: collapse;
+}
+
+.bike-list-table th,
+.bike-list-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center; /* Center-align text in table cells */
+}
+
+.bike-list-table th {
+    background-color: #f4f4f4;
+}
+
+.bike-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.action-button {
+    padding: 5px 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #4caf50; /* Green background for Edit button */
+    color: white;
+}
+
+.delete-button {
+    background-color: #f44336; /* Red background for Delete button */
+    color: white;
+    margin-left: 5px;
+}
+
+.bike-card img {
+    width: 250px;
+    height: 150px;
+}

@@ -1,3 +1,4 @@
+/* Footer.css */
 .footer-body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -6,15 +7,13 @@
 }
 
 .footer-main {
-    background-color: #004242;
+    background-color: #004d00; /* Dark green for bike theme */
     padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     height: 225px;
-
-
 }
 
 .footer-container-main {
@@ -22,7 +21,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-left: 300px;
     padding-top: 10px;
 }
 

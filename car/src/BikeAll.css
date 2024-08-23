@@ -1,0 +1,17 @@
+/* BikeAll.css */
+.bike-all-container {
+    padding: 10px;
+    margin-left: 150px;
+}
+
+.bike-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Increased gap for better spacing */
+}
+
+.error-message {
+    color: #e74c3c; /* Red color for error messages */
+    font-size: 16px;
+    margin-bottom: 15px;
+}
