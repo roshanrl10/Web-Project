@@ -6,7 +6,6 @@ import org.example.bikerental.pojo.RegistrationPojo;
 import org.example.bikerental.repository.RegistrationRepository;
 import org.example.bikerental.service.RegistrationService;
 import org.springframework.beans.BeanUtils;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder; // Import for password encryption
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
@@ -16,7 +15,6 @@ import java.util.Optional;
 public class RegistrationServiceImpl implements RegistrationService {
 
     private final RegistrationRepository registrationRepository;
-    private final BCryptPasswordEncoder passwordEncoder; // Add a password encoder
 
     @Override
     public void saveData(RegistrationPojo registrationPojo) {
@@ -27,7 +25,7 @@ public class RegistrationServiceImpl implements RegistrationService {
         RegistrationEntity registration = new RegistrationEntity();
         registration.setId(registrationPojo.getId());
         registration.setUsername(registrationPojo.getUsername());
-        registration.setPassword(passwordEncoder.encode(registrationPojo.getPassword())); // Encrypt password
+        registration.setPassword(registrationPojo.getPassword()); // No encryption
         registration.setFullName(registrationPojo.getFull_name());
         registration.setEmail(registrationPojo.getEmail());
         registration.setContactUs(registrationPojo.getContact_us());
@@ -48,7 +46,7 @@ public class RegistrationServiceImpl implements RegistrationService {
     @Override
     public boolean authenticateUser(String email, String password) {
         RegistrationEntity user = registrationRepository.findByEmail(email);
-        return user != null && passwordEncoder.matches(password, user.getPassword()); // Verify encrypted password
+        return user != null && password.equals(user.getPassword()); // No password verification with encoder
     }
 
     @Override
