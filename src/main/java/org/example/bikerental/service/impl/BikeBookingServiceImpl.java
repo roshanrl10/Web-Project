@@ -31,11 +31,11 @@ public class BikeBookingServiceImpl implements BikeBookingService {
         bikeBookingEntity.setTotalAmount(bikeBookingPojo.getTotalAmount());
 
         if (bikeRentalEntity != null && registrationEntity != null) {
-            bikeBookingEntity.setBike_Adding(bikeRentalEntity);
+            // bikeBookingEntity.setBike_Adding(bikeRentalEntity);
             bikeBookingEntity.setRegistration(registrationEntity);
         }
-        bikeBookingEntity.setRentalStartdateTime(bikeBookingPojo.getRentalStartdateTime());
-        bikeBookingEntity.setRentalEnddateTime(bikeBookingPojo.getRentalEnddateTime());
+        // bikeBookingEntity.setRentalStartdateTime(bikeBookingPojo.getRentalStartdateTime());
+        // bikeBookingEntity.setRentalEnddateTime(bikeBookingPojo.getRentalEnddateTime());
 
         bikeBookingRepository.save(bikeBookingEntity);
     }

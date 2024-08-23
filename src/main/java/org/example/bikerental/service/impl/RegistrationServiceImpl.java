@@ -28,9 +28,9 @@ public class RegistrationServiceImpl implements RegistrationService {
         registration.setId(registrationPojo.getId());
         registration.setUsername(registrationPojo.getUsername());
         registration.setPassword(passwordEncoder.encode(registrationPojo.getPassword())); // Encrypt password
-        registration.setFull_name(registrationPojo.getFull_name());
+        registration.setFullName(registrationPojo.getFull_name());
         registration.setEmail(registrationPojo.getEmail());
-        registration.setContact_us(registrationPojo.getContact_us());
+        registration.setContactUs(registrationPojo.getContact_us());
         registrationRepository.save(registration);
     }
 
