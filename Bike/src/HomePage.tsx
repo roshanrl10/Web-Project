@@ -1,18 +1,18 @@
 import React from "react";
 import "./homepage.css";
 import userfriendly from "./assets/user.jpg";
-import main from "./assets/main_bike.png"; // Updated to a bike image
-import system from "./assets/our_system_bike.jpg"; // Updated to a bike image
-import transparent from "./assets/Transparent_pricing_bike.jpg"; // Updated to a bike image
-import selection from "./assets/wide_bike_selection.jpg"; // Updated to a bike image
-import flexible from "./assets/Flexible_booking_bike.jpg"; // Updated to a bike image
-import easy from "./assets/easy_to_rent_bike.jpg"; // Updated to a bike image
+import main from "./assets/main.png"; // Updated to a bike image
+import system from "./assets/BMW.png"; // Updated to a bike image
+import transparent from "./assets/MERCEDES.png"; // Updated to a bike image
+import selection from "./assets/MERCEDES.png"; // Updated to a bike image
+import flexible from "./assets/MERCEDES.png"; // Updated to a bike image
+import easy from "./assets/MERCEDES.png"; // Updated to a bike image
 import bmw from "./assets/Bmw-Logo.png"; // Keep if relevant for bikes
-import kia from "./assets/KIA_bike.jpg"; // Updated to a bike image
-import tata from "./assets/Tata-Logo_bike.jpg"; // Updated to a bike image
-import mer from "./assets/Mercedes-Logo_bike.jpg"; // Updated to a bike image
-import rolls from "./assets/Rolls-Royce-Logo_bike.png"; // Updated to a bike image
-import volk from "./assets/Volkswagen-Logo_bike.jpg"; // Updated to a bike image
+import kia from "./assets/MERCEDES.png"; // Updated to a bike image
+import tata from "./assets/MERCEDES.png"; // Updated to a bike image
+import mer from "./assets/MERCEDES.png"; // Updated to a bike image
+import rolls from "./assets/MERCEDES.png"; // Updated to a bike image
+import volk from "./assets/MERCEDES.png"; // Updated to a bike image
 
 const HomePage: React.FC = () => {
   return (
